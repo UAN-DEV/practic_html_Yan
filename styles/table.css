@@ -1,0 +1,50 @@
+table,
+thead,
+tbody,
+th,
+td {
+  border: 2px solid teal;
+  border-collapse: separate;
+}
+table {
+  width: 100%;
+  margin-top: 20px;
+  caption {
+    font-size: 30px;
+    font-weight: bold;
+  }
+  thead {
+    background-color: greenyellow;
+  }
+  td {
+    width: calc(100% / 7);
+    text-align: center;
+  }
+  .year {
+    background-color: aqua;
+  }
+  .row-color {
+    background-color: rgb(177, 221, 100);
+  }
+}
+
+footer {
+  margin-top: 20px;
+  margin-bottom: 20px;
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  border-top: 1px solid gray;
+  border-bottom: 1px solid gray;
+  a {
+    font-style: normal;
+    text-decoration: none;
+  }
+
+  div {
+    display: flex;
+    justify-content: space-around;
+    margin: 15px;
+  }
+}
+
