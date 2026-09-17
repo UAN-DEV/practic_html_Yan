@@ -1,0 +1,122 @@
+body {
+  width: 100%;
+  padding: 20px;
+}
+
+header {
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  border-bottom: 1px solid gray;
+}
+
+nav {
+  width: 100%;
+  font-size: clamp(1.5rem, 4vw, 3rem);
+  font-weight: bold;
+  a {
+    text-decoration: none;
+  }
+  ul {
+    display: flex;
+    justify-content: space-between;
+    list-style-type: none; 
+    padding: 0; 
+    margin: 0;
+    li {
+      width: calc(100% / 3);
+      border: 2px solid blue;
+      border-radius: 10px;
+      margin: 1%;
+      padding: 10px;
+      text-align: center;
+    }
+  }
+}
+main {
+  width: 100%;
+
+  h1 {
+    text-align: center;
+    margin: 15px;
+    font-size: clamp(1.5rem, 4vw, 3rem);
+  }
+  article {
+    border-top: 1px solid gray;
+    font-size: clamp(1.2rem, 3vw, 2, 5rem);
+
+    div {
+      img {
+        width: 150px;
+        margin-right: 20px;
+      }
+      display: flex;
+      justify-content: flex-start;
+      align-items: center;
+    }
+  }
+  article:last-child {
+    border-bottom: 1px solid gray;
+  }
+}
+
+table,
+thead,
+tbody,
+th,
+td {
+  border: 2px solid teal;
+  border-collapse: separate;
+}
+table {
+  width: 100%;
+  margin-top: 20px;
+  caption {
+    font-size: 30px;
+    font-weight: bold;
+  }
+  thead {
+    background-color: greenyellow;
+  }
+  td {
+    width: calc(100% / 7);
+    text-align: center;
+  }
+  .year {
+    background-color: aqua;
+  }
+  .row-color {
+    background-color: rgb(177, 221, 100);
+  }
+}
+
+footer {
+  margin-top: 20px;
+  margin-bottom: 20px;
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  border-top: 1px solid gray;
+  border-bottom: 1px solid gray;
+  a {
+    font-style: normal;
+    text-decoration: none;
+  }
+
+  div {
+    display: flex;
+    justify-content: space-around;
+    margin: 15px;
+  }
+}
+
+.fixed {
+  color: blue;
+  font-weight: bold;
+  opacity: 70%;
+  position: fixed;
+  bottom: 20px;
+  right: 20px;
+  z-index: 9999;
+}
