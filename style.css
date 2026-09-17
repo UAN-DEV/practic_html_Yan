@@ -21,8 +21,8 @@ nav {
   ul {
     display: flex;
     justify-content: space-between;
-    list-style-type: none; 
-    padding: 0; 
+    list-style-type: none;
+    padding: 0;
     margin: 0;
     li {
       width: calc(100% / 3);
@@ -31,6 +31,13 @@ nav {
       margin: 1%;
       padding: 10px;
       text-align: center;
+      div {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        width: 100%;
+        height: 100%;
+      }
     }
   }
 }
@@ -119,4 +126,37 @@ footer {
   bottom: 20px;
   right: 20px;
   z-index: 9999;
+}
+
+form {
+  width: max-content;
+  margin: 20px;
+
+  fieldset {
+    margin-bottom: 10px;
+  }
+  datalist {
+    display: flex;
+    justify-content: space-between;
+    width: 200px;
+    margin-left: 40px;
+    option {
+      padding: 0;
+      font-style: 10px;
+    }
+  }
+  input[type="range"] {
+    width: 200px;
+    margin: 0;
+  }
+  input[type="radio"]{
+    margin-right: 20px;
+  }
+  input, select{
+    margin-bottom: 15px;
+  }
+}
+
+input[type="reset"] {
+  margin-left: 20px;
 }
