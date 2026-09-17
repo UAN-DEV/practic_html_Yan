@@ -4,23 +4,36 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>AUTOCAR</title>
+    <link rel="stylesheet" href="style.css" />
   </head>
   <body>
     <header>
+      <div><img src="./assets/images/Logo_autocar.png" alt="Logo AUTOCAR" /></div>
       <nav>
         <ul>
-          <li><a href="#ford">FORD</a></li>
-          <li><a href="#toyota">TOYOTA</a></li>
-          <li><a href="#bmw">BMW</a></li>
+          <li>
+            <a href="#ford"><div>FORD</div></a>
+          </li>
+          <li>
+            <a href="#toyota"><div>TOYOTA</div></a>
+          </li>
+          <li>
+            <a href="#bmw"><div>BMW</div></a>
+          </li>
+          <li>
+            <a href="#table"><div>Car info</div></a>
+          </li>
         </ul>
       </nav>
-      <img src="./assets/images/Logo_autocar.png" alt="Logo AUTOCAR" />
     </header>
     <main>
       <h1>AUTOCAR - best choice for you!</h1>
+
       <article id="ford">
-        <img src="./assets/images/Logo_Ford.jpeg" alt="Logo Ford" />
-        <h2>FORD - Lorem ipsum, dolor sit amet consectetur adipisicing.</h2>
+        <div>
+          <img src="./assets/images/Logo_Ford.jpeg" alt="Logo Ford" />
+          <h2>FORD - Lorem ipsum, dolor sit amet consectetur adipisicing.</h2>
+        </div>
 
         <section>
           <h3>Lorem ipsum dolor sit amet</h3>
@@ -70,8 +83,10 @@
         </section>
       </article>
       <article id="toyota">
-        <img src="./assets/images/Logo_Toyota.jpeg" alt="Logo TOYOTA" />
-        <h2>TOYOTA - Lorem ipsum, dolor sit amet consectetur adipisicing.</h2>
+        <div>
+          <img src="./assets/images/Logo_Toyota.jpeg" alt="Logo TOYOTA" />
+          <h2>TOYOTA - Lorem ipsum, dolor sit amet consectetur adipisicing.</h2>
+        </div>
 
         <section>
           <h3>Lorem ipsum dolor sit amet</h3>
@@ -121,8 +136,10 @@
         </section>
       </article>
       <article id="bmw">
-        <img src="./assets/images/Logo_BMW.webp" width="200" alt="Logo BMW" />
-        <h2>BMW - Lorem ipsum, dolor sit amet consectetur adipisicing.</h2>
+        <div>
+          <img src="./assets/images/Logo_BMW.webp" width="200" alt="Logo BMW" />
+          <h2>BMW - Lorem ipsum, dolor sit amet consectetur adipisicing.</h2>
+        </div>
 
         <section>
           <h3>Lorem ipsum dolor sit amet</h3>
@@ -172,21 +189,112 @@
         </section>
       </article>
     </main>
+    <table id="table">
+      <caption>
+        Car info
+      </caption>
+      <colgroup>
+        <col />
+        <col />
+        <col />
+        <col />
+        <col />
+        <col />
+        <col class="year" />
+      </colgroup>
+      <thead>
+        <tr>
+          <th rowspan="2">Brand</th>
+          <th rowspan="2">Model</th>
+          <th rowspan="2">Country</th>
+          <th colspan="2">Weight, kg</th>
+          <th rowspan="2">Max speed</th>
+          <th rowspan="2">Realise year</th>
+        </tr>
+        <tr>
+          <th>empty</th>
+          <th>fuul</th>
+        </tr>
+      </thead>
+      <tbody>
+        <tr>
+          <td rowspan="2">Ford</td>
+          <td>Mondeo 4</td>
+          <td>USA</td>
+          <td>1597</td>
+          <td>2300</td>
+          <td>200</td>
+          <td>2010</td>
+        </tr>
+        <tr>
+          <td>Fiesta 1.0</td>
+          <td>USA</td>
+          <td>1050</td>
+          <td>1200</td>
+          <td>165</td>
+          <td>2015</td>
+        </tr>
+        <tr class="row-color">
+          <td rowspan="2">Toyota</td>
+          <td>RAV 4</td>
+          <td>Japan</td>
+          <td>1550</td>
+          <td>2050</td>
+          <td>190</td>
+          <td>2015</td>
+        </tr>
+        <tr class="row-color">
+          <td>Camry</td>
+          <td>Japan</td>
+          <td>1560</td>
+          <td>2030</td>
+          <td>210</td>
+          <td>2018</td>
+        </tr>
+        <tr>
+          <td rowspan="2">BMW</td>
+          <td>X5</td>
+          <td>Germany</td>
+          <td>2150</td>
+          <td>2900</td>
+          <td>245</td>
+          <td>2020</td>
+        </tr>
+        <tr>
+          <td>i4</td>
+          <td>Germany</td>
+          <td>2100</td>
+          <td>2300</td>
+          <td>225</td>
+          <td>2022</td>
+        </tr>
+      </tbody>
+    </table>
     <footer>
-      <p>
-        <b>Adress: Kyiv</b>
-      </p>
-
-      <address>
-        <b>
-          <a href="mailto:auto_show@test.com">mail: auto_show@test.com</a>
-          <a href="tel:+380979777777"> tel: +38 (097) 977-77-77</a>
-        </b>
-      </address>
-      <address>
-        <b><a href="http://auto_show.com.ua" target="_blank" rel="noopener noreferrer">website: auto_show.com.ua</a></b>
-      </address>
-      <a href="#">Вгору</a>
+      <div>
+        <p>
+          <b>Adress: Kyiv</b>
+        </p>
+      </div>
+      <div>
+        <address>
+          <b>
+            <a href="mailto:auto_show@test.com">mail: auto_show@test.com</a><br>
+            <a href="tel:+380979777777"> tel: +38 (097) 977-77-77</a>
+          </b>
+        </address>
+      </div>
+      <div>
+        <address>
+          <b
+            ><a href="http://auto_show.com.ua" target="_blank" rel="noopener noreferrer"
+              >website: auto_show.com.ua</a
+            ></b
+          >
+        </address>
+      </div>
     </footer>
+
+    <a href="#" class="fixed">Up</a>
   </body>
 </html>
